@@ -12,3 +12,100 @@ Decentralized marketplaces: A decentralized marketplace could use libp2p to enab
 Decentralized social networks: A decentralized social network could use libp2p to enable users to connect with each other and share content directly, without the need for a central server. The application could use libp2p's routing protocols to establish connections between users and transmit messages and content.
 
 Decentralized prediction markets: A decentralized prediction market could use libp2p to enable users to buy and sell predictions about future events directly with each other, without the need for a central market operator. The application could use libp2p's routing protocols to facilitate transactions and resolve disputes.
+
+
+Sequence diagram for prediction market
+
+@startuml
+
+actor User
+participant IPFS
+
+User -> IPFS: Add prediction to IPFS
+IPFS -> User: Hash of added prediction
+User -> IPFS: Retrieve prediction using hash
+IPFS -> User: Retrieved prediction
+
+@enduml
+
+Sequence diagram for decentralized messaging
+
+@startuml
+
+actor User1
+actor User2
+participant IPFS
+
+User1 -> IPFS: Send message to User2
+IPFS -> User2: Deliver message from User1
+User2 -> IPFS: Send reply to User1
+IPFS -> User1: Deliver reply from User2
+
+@enduml
+
+Sequence diagram for decentralized social network
+
+@startuml
+
+actor User1
+actor User2
+participant IPFS
+
+User1 -> IPFS: Add post to social network
+IPFS -> User2: Deliver new post notification
+User2 -> IPFS: Retrieve post
+IPFS -> User2: Deliver post
+User2 -> IPFS: Add comment to post
+IPFS -> User1: Deliver new comment notification
+User1 -> IPFS: Retrieve post and comments
+IPFS -> User1: Deliver post and comments
+
+@enduml
+
+
+Sequence diagram for decentralized file sharing system
+
+@startuml
+
+actor User1
+actor User2
+participant IPFS
+
+User1 -> IPFS: Add file to file sharing system
+IPFS -> User2: Deliver new file notification
+User2 -> IPFS: Retrieve file
+IPFS -> User2: Deliver file
+User2 -> IPFS: Add comment to file
+IPFS -> User1: Deliver new comment notification
+User1 -> IPFS: Retrieve file and comments
+IPFS -> User1: Deliver file and comments
+
+@enduml
+
+Sequence diagram for decentralized market place
+@startuml
+
+actor Buyer
+actor Seller
+participant IPFS
+
+Buyer -> IPFS: Search for products
+IPFS -> Buyer: Return search results
+Buyer -> IPFS: Retrieve product details
+IPFS -> Buyer: Deliver product details
+Buyer -> IPFS: Place order
+IPFS -> Seller: Deliver order notification
+Seller -> IPFS: Confirm order
+IPFS -> Buyer: Deliver order confirmation
+Buyer -> IPFS: Make payment
+IPFS -> Seller: Deliver payment notification
+Seller -> IPFS: Ship product
+IPFS -> Buyer: Deliver shipping notification
+
+@enduml
+
+
+
+
+
+
