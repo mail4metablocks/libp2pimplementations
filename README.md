@@ -13,9 +13,18 @@ Decentralized social networks: A decentralized social network could use libp2p t
 
 Decentralized prediction markets: A decentralized prediction market could use libp2p to enable users to buy and sell predictions about future events directly with each other, without the need for a central market operator. The application could use libp2p's routing protocols to facilitate transactions and resolve disputes.
 
+![image](https://user-images.githubusercontent.com/117555665/208228776-5cd7c19e-ca5d-46dc-a07a-055f8b5704a0.png)
+![image](https://user-images.githubusercontent.com/117555665/208228761-4f91923a-733f-438d-9497-842a83960397.png)
+![image](https://user-images.githubusercontent.com/117555665/208228736-ed5d89fa-5680-4ab6-85ef-4edd0139923c.png)
+![image](https://user-images.githubusercontent.com/117555665/208228713-07d6c58a-cc3a-4ff2-96c8-879b9020d716.png)
+![image](https://user-images.githubusercontent.com/117555665/208228691-ef39d780-096b-462c-be66-73547318812e.png)
+
+
+
+
+```plantuml
 
 ## Sequence diagram for prediction market
-```plantuml
 
 @startuml
 
@@ -29,9 +38,8 @@ IPFS -> User: Retrieved prediction
 
 @enduml
 
-![image](https://user-images.githubusercontent.com/117555665/208228776-5cd7c19e-ca5d-46dc-a07a-055f8b5704a0.png)
 
-```plantuml
+
 ### Sequence diagram for decentralized messaging
 
 @startuml
@@ -47,7 +55,7 @@ IPFS -> User1: Deliver reply from User2
 
 @enduml
 
-![image](https://user-images.githubusercontent.com/117555665/208228761-4f91923a-733f-438d-9497-842a83960397.png)
+
 
 
 
@@ -70,7 +78,6 @@ IPFS -> User1: Deliver post and comments
 
 @enduml
 
-![image](https://user-images.githubusercontent.com/117555665/208228736-ed5d89fa-5680-4ab6-85ef-4edd0139923c.png)
 
 
 
@@ -93,7 +100,7 @@ IPFS -> User1: Deliver file and comments
 
 @enduml
 
-![image](https://user-images.githubusercontent.com/117555665/208228691-ef39d780-096b-462c-be66-73547318812e.png)
+
 
 
 ##### Sequence diagram for decentralized market place
@@ -119,7 +126,7 @@ IPFS -> Buyer: Deliver shipping notification
 
 @enduml
 
-![image](https://user-images.githubusercontent.com/117555665/208228713-07d6c58a-cc3a-4ff2-96c8-879b9020d716.png)
+
 
 
 
