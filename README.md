@@ -14,7 +14,7 @@ Decentralized social networks: A decentralized social network could use libp2p t
 Decentralized prediction markets: A decentralized prediction market could use libp2p to enable users to buy and sell predictions about future events directly with each other, without the need for a central market operator. The application could use libp2p's routing protocols to facilitate transactions and resolve disputes.
 
 
-Sequence diagram for prediction market
+## Sequence diagram for prediction market
 
 @startuml
 
@@ -31,7 +31,7 @@ IPFS -> User: Retrieved prediction
 ![image](https://user-images.githubusercontent.com/117555665/208228776-5cd7c19e-ca5d-46dc-a07a-055f8b5704a0.png)
 
 
-Sequence diagram for decentralized messaging
+### Sequence diagram for decentralized messaging
 
 @startuml
 
@@ -50,7 +50,7 @@ IPFS -> User1: Deliver reply from User2
 
 
 
-Sequence diagram for decentralized social network
+#### Sequence diagram for decentralized social network
 
 @startuml
 
@@ -73,7 +73,7 @@ IPFS -> User1: Deliver post and comments
 
 
 
-Sequence diagram for decentralized file sharing system
+##### Sequence diagram for decentralized file sharing system
 
 @startuml
 
@@ -95,7 +95,7 @@ IPFS -> User1: Deliver file and comments
 ![image](https://user-images.githubusercontent.com/117555665/208228691-ef39d780-096b-462c-be66-73547318812e.png)
 
 
-Sequence diagram for decentralized market place
+##### Sequence diagram for decentralized market place
 
 @startuml
 
