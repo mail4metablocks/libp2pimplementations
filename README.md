@@ -104,6 +104,7 @@ IPFS -> Buyer: Deliver shipping notification
 
 @enduml
 
+![image](https://user-images.githubusercontent.com/117555665/208228588-8f965069-58a5-4c6d-ae81-fae124e7b573.png)
 
 
 
