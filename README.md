@@ -15,12 +15,13 @@ Decentralized prediction markets: A decentralized prediction market could use li
 
 
 ## Sequence diagram for prediction market
+```plantuml
 
 @startuml
 
 actor User
 participant IPFS
-
+                
 User -> IPFS: Add prediction to IPFS
 IPFS -> User: Hash of added prediction
 User -> IPFS: Retrieve prediction using hash
@@ -30,7 +31,7 @@ IPFS -> User: Retrieved prediction
 
 ![image](https://user-images.githubusercontent.com/117555665/208228776-5cd7c19e-ca5d-46dc-a07a-055f8b5704a0.png)
 
-
+```plantuml
 ### Sequence diagram for decentralized messaging
 
 @startuml
